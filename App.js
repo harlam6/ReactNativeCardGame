@@ -7,7 +7,7 @@
  */
 
 import React, {Component} from 'react';
-import { Platform, StyleSheet, Button, Image, Text, View } from 'react-native';
+import { Platform, StyleSheet, Button, Image, Text, View, TouchableHighlight } from 'react-native';
 
 
 
@@ -25,7 +25,10 @@ export default class App extends Component<Props> {
             uri: 'https://upload.wikimedia.org/wikipedia/commons/d/de/Bananavarieties.jpg'
         };
 
-    return (
+
+
+        return (
+
         <View style={styles.container}>
             <Button
                 onPress={() => {
@@ -36,7 +39,8 @@ export default class App extends Component<Props> {
             <Image source={pic} style={{ width: 193, height: 110 }} />
         <Text style={styles.welcome}>Welcome to React Native!</Text>
         <Text style={styles.instructions}>To get started, edit App.js</Text>
-        <Text style={styles.instructions}>{instructions}</Text>
+                <Text style={styles.instructions}>{instructions}</Text>
+
       </View>
     );
   }
