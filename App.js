@@ -7,8 +7,7 @@
  */
 
 import React, {Component} from 'react';
-import { Platform, StyleSheet, Text, View } from 'react-native';
-import { Button } from 'react-native';
+import { Platform, StyleSheet, Button, Image, Text, View } from 'react-native';
 
 
 
@@ -22,7 +21,9 @@ const instructions = Platform.select({
 type Props = {};
 export default class App extends Component<Props> {
     render() {
-
+        let pic = {
+            uri: 'https://upload.wikimedia.org/wikipedia/commons/d/de/Bananavarieties.jpg'
+        };
 
     return (
         <View style={styles.container}>
@@ -32,6 +33,7 @@ export default class App extends Component<Props> {
                 }}
                 title="Press Me"
             />
+            <Image source={pic} style={{ width: 193, height: 110 }} />
         <Text style={styles.welcome}>Welcome to React Native!</Text>
         <Text style={styles.instructions}>To get started, edit App.js</Text>
         <Text style={styles.instructions}>{instructions}</Text>
