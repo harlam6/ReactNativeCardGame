@@ -1,10 +1,10 @@
 {
   "ExpandedNodes": [
     "",
-    "\\android\\.gradle",
-    "\\android\\app",
-    "\\Components"
+    "\\Components",
+    "\\Components\\Assets",
+    "\\Components\\Assets\\cards"
   ],
-  "SelectedNode": "\\App.js",
+  "SelectedNode": "\\Components\\Assets",
   "PreviewInSolutionExplorer": false
 }
