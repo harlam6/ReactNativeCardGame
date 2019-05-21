@@ -3,8 +3,9 @@
     "",
     "\\Components",
     "\\Components\\Assets",
-    "\\Components\\Assets\\cards"
+    "\\Components\\Assets\\cards",
+    "\\Components\\Assets\\sounds"
   ],
-  "SelectedNode": "\\Components\\Assets",
+  "SelectedNode": "\\package-lock.json",
   "PreviewInSolutionExplorer": false
 }

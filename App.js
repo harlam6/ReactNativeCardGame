@@ -9,6 +9,7 @@
 import React, {Component} from 'react';
 import { Alert, Platform, StyleSheet, Button, Image, Text, View, TouchableHighlight, TouchableOpacity } from 'react-native';
 
+
 const instructions = Platform.select({
   ios: 'Press Cmd+R to reload,\n' + 'Cmd+D or shake for dev menu',
   android:
@@ -62,7 +63,7 @@ export default class App extends Component<Props> {
 
                 <TouchableOpacity activeOpacity={.5} onPress={this.callFun}>
 
-                    <Image source={require('./Samurai.png')} style={{ width: 193, height: 110 }} />
+                    <Image source={require('./Components/Assets/cards/Knight.jpg')} style={{ width: 193, height: 110 }} />
 
                 </TouchableOpacity>
 
