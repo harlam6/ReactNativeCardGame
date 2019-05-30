@@ -8,6 +8,9 @@
 
 import React, {Component} from 'react';
 import { Alert, Platform, StyleSheet, Button, Image, Text, View, TouchableHighlight, TouchableOpacity } from 'react-native';
+import { createStackNavigator, createAppContainer } from "react-navigation";
+import LoginScreen from './Components/screens/Login';
+import GameScreen from './Components/screens/Game';
 
 
 const instructions = Platform.select({
@@ -39,7 +42,8 @@ export default class App extends Component<Props> {
         <View style={styles.container}>
             <Button
                 onPress={() => {
-                    Alert.alert('You tapped the button!');
+                        Alert.alert('You tapped the button!');
+                        document.location.href = "./Components/Assets/CardsAction.js";
                 }}
                 title="Press Me"
                 />
