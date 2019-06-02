@@ -7,8 +7,26 @@ import {
     Alert
 } from "react-native";
 
-import Pusher from 'pusher-js/react-native';
-
-const pusher_app_key = 'YOUR PUSHER APP KEY';
-const pusher_app_cluster = 'YOUR PUSHER APP CLUSTER';
-const base_url = 'YOUR HTTPS NGROK URL';
+render() {
+    return (
+        <Container>
+            <Form>
+                <Item floatingLabel>
+                    <Label>Email</Label>
+                    <Input autoCapitalize="none" autoCorrect={false} />
+                </Item>
+                <Item floatingLabel>
+                    <Label>Password</Label>
+                    <Input
+                        secureTextEntry={true}
+                        autoCapitalize="none"
+                        autoCorrect={false}
+                    />
+                </Item>
+                <Button full rounded success>
+                    <Text>Login</Text>
+                </Button>
+            </Form>
+        </Container>
+    );
+}
